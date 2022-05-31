@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { map, of } from 'rxjs';
+import { filter, map, of } from 'rxjs';
 
 @Component({
   selector: 'app-ofopr',
@@ -19,6 +19,8 @@ export class OfoprComponent implements OnInit {
     Squared_Value.subscribe((data)=>{
       console.log(data);
     });
+
+  
   };
 
 }
